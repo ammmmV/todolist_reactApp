@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  background-color: #f7f7f7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+li {
+  list-style-type:none;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.check_act {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 10px;
+}
+.check_act::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border: none;
+}
+.check_act:checked::before {
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+  background-color: #81acec;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.removeBTN {
+  cursor: pointer;
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.asd button {
+  font-size: 0.9em;
+  cursor: pointer;
+  border-radius: 5%;
+  border-color: #81acec;
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: #bbd2f5;
+}
